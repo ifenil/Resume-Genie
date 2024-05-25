@@ -5,6 +5,11 @@ struct ResumeFormView: View {
     @State private var education: String = ""
     @State private var experience: String = ""
     @State private var projects: String = ""
+    @State private var linkUserName: String = ""
+    @State private var email: String = ""
+    @State private var pnum: String = ""
+    @State private var summary: String = ""
+    @State private var skills: String = ""
     @State private var showError: Bool = false
     @State private var errorMessage: String = ""
 
@@ -13,6 +18,15 @@ struct ResumeFormView: View {
             Form {
                 Section(header: Text("Personal Information")) {
                     TextField("Name", text: $name)
+                    TextField("LinkedIn Username", text: $linkUserName)
+                    TextField("Email", text: $email)
+                    TextField("Phone Number", text: $pnum)
+                }
+                Section(header: Text("Summary")) {
+                    TextField("Summary", text: $summary)
+                }
+                Section(header: Text("Skills")) {
+                    TextField("Skills", text: $skills)
                 }
                 Section(header: Text("Education")) {
                     TextField("Education", text: $education)
@@ -24,7 +38,7 @@ struct ResumeFormView: View {
                     TextField("Projects", text: $projects)
                 }
             }
-            .navigationBarTitle("Resume Builder")
+            .navigationBarTitle("Resume Genie")
             .navigationBarItems(trailing: Button(action: {
                 generatePDF()
             }) {
@@ -37,7 +51,7 @@ struct ResumeFormView: View {
     }
     
     func generatePDF() {
-        guard let latexContent = loadAndModifyTemplate(name: name, education: education, experience: experience, projects: projects) else {
+        guard let latexContent = loadAndModifyTemplate(name: name, education: education, experience: experience, projects: projects, linkUserName: linkUserName, email: email, pnum: pnum, summary: summary, skills: skills) else {
             showError = true
             errorMessage = "Failed to load LaTeX template."
             return
@@ -45,7 +59,7 @@ struct ResumeFormView: View {
         sendLatexToServer(latexContent: latexContent)
     }
     
-    func loadAndModifyTemplate(name: String, education: String, experience: String, projects: String) -> String? {
+    func loadAndModifyTemplate(name: String, education: String, experience: String, projects: String, linkUserName: String, email: String, pnum: String, summary: String, skills: String) -> String? {
         guard let templatePath = Bundle.main.path(forResource: "cv", ofType: "tex") else {
             return nil
         }
@@ -53,6 +67,11 @@ struct ResumeFormView: View {
         do {
             var template = try String(contentsOfFile: templatePath, encoding: .utf8)
             template = template.replacingOccurrences(of: "<<NAME>>", with: name)
+            template = template.replacingOccurrences(of: "<<LINKUSERNAME>>", with: linkUserName)
+            template = template.replacingOccurrences(of: "<<EMAIL>>", with: email)
+            template = template.replacingOccurrences(of: "<<PNUM>>", with: pnum)
+            template = template.replacingOccurrences(of: "<<SUMMARY>>", with: summary)
+            template = template.replacingOccurrences(of: "<<SKILLS>>", with: skills)
             template = template.replacingOccurrences(of: "<<EDUCATION>>", with: education)
             template = template.replacingOccurrences(of: "<<EXPERIENCE>>", with: experience)
             template = template.replacingOccurrences(of: "<<PROJECTS>>", with: projects)

@@ -11,7 +11,7 @@ import SwiftUI
 struct Resume_GenieApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ResumeFormView()
         }
     }
 }

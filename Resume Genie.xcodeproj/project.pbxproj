@@ -11,6 +11,11 @@
 		E64BEA372C0100E000A4B5C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BEA362C0100E000A4B5C8 /* ContentView.swift */; };
 		E64BEA392C0100E200A4B5C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64BEA382C0100E200A4B5C8 /* Assets.xcassets */; };
 		E64BEA3C2C0100E200A4B5C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64BEA3B2C0100E200A4B5C8 /* Preview Assets.xcassets */; };
+		E64BEA432C01093C00A4B5C8 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BEA422C01093C00A4B5C8 /* LoginPage.swift */; };
+		E64BEA462C01124D00A4B5C8 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = E64BEA452C01124D00A4B5C8 /* GoogleSignIn */; };
+		E64BEA482C01124D00A4B5C8 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E64BEA472C01124D00A4B5C8 /* GoogleSignInSwift */; };
+		E64BEA4B2C015B5700A4B5C8 /* LatexToPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BEA4A2C015B5700A4B5C8 /* LatexToPDF.swift */; };
+		E64BEA512C018BC600A4B5C8 /* cv.tex in Resources */ = {isa = PBXBuildFile; fileRef = E64BEA502C018BC600A4B5C8 /* cv.tex */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,10 @@
 		E64BEA362C0100E000A4B5C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E64BEA382C0100E200A4B5C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E64BEA3B2C0100E200A4B5C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E64BEA422C01093C00A4B5C8 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		E64BEA492C01253100A4B5C8 /* Resume Genie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Resume Genie.entitlements"; sourceTree = "<group>"; };
+		E64BEA4A2C015B5700A4B5C8 /* LatexToPDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatexToPDF.swift; sourceTree = "<group>"; };
+		E64BEA502C018BC600A4B5C8 /* cv.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = cv.tex; path = ../../../Downloads/cv.tex; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E64BEA462C01124D00A4B5C8 /* GoogleSignIn in Frameworks */,
+				E64BEA482C01124D00A4B5C8 /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +62,12 @@
 		E64BEA332C0100E000A4B5C8 /* Resume Genie */ = {
 			isa = PBXGroup;
 			children = (
+				E64BEA502C018BC600A4B5C8 /* cv.tex */,
+				E64BEA492C01253100A4B5C8 /* Resume Genie.entitlements */,
 				E64BEA342C0100E000A4B5C8 /* Resume_GenieApp.swift */,
 				E64BEA362C0100E000A4B5C8 /* ContentView.swift */,
+				E64BEA422C01093C00A4B5C8 /* LoginPage.swift */,
+				E64BEA4A2C015B5700A4B5C8 /* LatexToPDF.swift */,
 				E64BEA382C0100E200A4B5C8 /* Assets.xcassets */,
 				E64BEA3A2C0100E200A4B5C8 /* Preview Content */,
 			);
@@ -83,6 +98,10 @@
 			dependencies = (
 			);
 			name = "Resume Genie";
+			packageProductDependencies = (
+				E64BEA452C01124D00A4B5C8 /* GoogleSignIn */,
+				E64BEA472C01124D00A4B5C8 /* GoogleSignInSwift */,
+			);
 			productName = "Resume Genie";
 			productReference = E64BEA312C0100E000A4B5C8 /* Resume Genie.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +130,9 @@
 				Base,
 			);
 			mainGroup = E64BEA282C0100E000A4B5C8;
+			packageReferences = (
+				E64BEA442C01124D00A4B5C8 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = E64BEA322C0100E000A4B5C8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +147,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E64BEA512C018BC600A4B5C8 /* cv.tex in Resources */,
 				E64BEA3C2C0100E200A4B5C8 /* Preview Assets.xcassets in Resources */,
 				E64BEA392C0100E200A4B5C8 /* Assets.xcassets in Resources */,
 			);
@@ -138,6 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E64BEA372C0100E000A4B5C8 /* ContentView.swift in Sources */,
+				E64BEA432C01093C00A4B5C8 /* LoginPage.swift in Sources */,
+				E64BEA4B2C015B5700A4B5C8 /* LatexToPDF.swift in Sources */,
 				E64BEA352C0100E000A4B5C8 /* Resume_GenieApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,9 +294,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Resume Genie/Resume Genie.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Resume Genie/Preview Content\"";
+				DEVELOPMENT_TEAM = QRN8T8LNAX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -286,6 +314,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Resume.Builder.Genie.Resume-Genie";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,9 +326,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Resume Genie/Resume Genie.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Resume Genie/Preview Content\"";
+				DEVELOPMENT_TEAM = QRN8T8LNAX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -314,6 +346,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Resume.Builder.Genie.Resume-Genie";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,6 +375,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E64BEA442C01124D00A4B5C8 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E64BEA452C01124D00A4B5C8 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E64BEA442C01124D00A4B5C8 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		E64BEA472C01124D00A4B5C8 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E64BEA442C01124D00A4B5C8 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E64BEA292C0100E000A4B5C8 /* Project object */;
 }

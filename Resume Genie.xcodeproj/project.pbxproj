@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E62EF9FE2C02632200BFDD23 /* depend.Dockerfile in Resources */ = {isa = PBXBuildFile; fileRef = E62EF9FD2C02632200BFDD23 /* depend.Dockerfile */; };
-		E62EFA002C02635100BFDD23 /* server.js in Resources */ = {isa = PBXBuildFile; fileRef = E62EF9FF2C02635100BFDD23 /* server.js */; };
 		E64BEA352C0100E000A4B5C8 /* Resume_GenieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BEA342C0100E000A4B5C8 /* Resume_GenieApp.swift */; };
 		E64BEA372C0100E000A4B5C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BEA362C0100E000A4B5C8 /* ContentView.swift */; };
 		E64BEA392C0100E200A4B5C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64BEA382C0100E200A4B5C8 /* Assets.xcassets */; };
@@ -21,8 +19,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E62EF9FD2C02632200BFDD23 /* depend.Dockerfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = depend.Dockerfile; path = ../../../depend.Dockerfile; sourceTree = "<group>"; };
-		E62EF9FF2C02635100BFDD23 /* server.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = server.js; path = ../../../server.js; sourceTree = "<group>"; };
 		E64BEA312C0100E000A4B5C8 /* Resume Genie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Resume Genie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64BEA342C0100E000A4B5C8 /* Resume_GenieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resume_GenieApp.swift; sourceTree = "<group>"; };
 		E64BEA362C0100E000A4B5C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,8 +62,6 @@
 		E64BEA332C0100E000A4B5C8 /* Resume Genie */ = {
 			isa = PBXGroup;
 			children = (
-				E62EF9FF2C02635100BFDD23 /* server.js */,
-				E62EF9FD2C02632200BFDD23 /* depend.Dockerfile */,
 				E64BEA502C018BC600A4B5C8 /* cv.tex */,
 				E64BEA492C01253100A4B5C8 /* Resume Genie.entitlements */,
 				E64BEA342C0100E000A4B5C8 /* Resume_GenieApp.swift */,
@@ -155,9 +149,7 @@
 			files = (
 				E64BEA512C018BC600A4B5C8 /* cv.tex in Resources */,
 				E64BEA3C2C0100E200A4B5C8 /* Preview Assets.xcassets in Resources */,
-				E62EF9FE2C02632200BFDD23 /* depend.Dockerfile in Resources */,
 				E64BEA392C0100E200A4B5C8 /* Assets.xcassets in Resources */,
-				E62EFA002C02635100BFDD23 /* server.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

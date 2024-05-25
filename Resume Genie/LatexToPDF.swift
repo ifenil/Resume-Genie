@@ -83,7 +83,7 @@ struct ResumeFormView: View {
     }
     
     func sendLatexToServer(latexContent: String) {
-        guard let url = URL(string: "http://localhost:8080/convert") else { return }
+        guard let url = URL(string: "https://nodeserver-jby0.onrender.com/convert") else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("text/plain", forHTTPHeaderField: "Content-Type")

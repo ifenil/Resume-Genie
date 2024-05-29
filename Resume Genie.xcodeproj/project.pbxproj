@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E60D2F0F2C06ACDD0065F46E /* cv.tex in Resources */ = {isa = PBXBuildFile; fileRef = E60D2F0E2C06ACDD0065F46E /* cv.tex */; };
 		E64BEA352C0100E000A4B5C8 /* Resume_GenieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BEA342C0100E000A4B5C8 /* Resume_GenieApp.swift */; };
 		E64BEA372C0100E000A4B5C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BEA362C0100E000A4B5C8 /* ContentView.swift */; };
 		E64BEA392C0100E200A4B5C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64BEA382C0100E200A4B5C8 /* Assets.xcassets */; };
@@ -15,10 +16,10 @@
 		E64BEA462C01124D00A4B5C8 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = E64BEA452C01124D00A4B5C8 /* GoogleSignIn */; };
 		E64BEA482C01124D00A4B5C8 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E64BEA472C01124D00A4B5C8 /* GoogleSignInSwift */; };
 		E64BEA4B2C015B5700A4B5C8 /* LatexToPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BEA4A2C015B5700A4B5C8 /* LatexToPDF.swift */; };
-		E64BEA512C018BC600A4B5C8 /* cv.tex in Resources */ = {isa = PBXBuildFile; fileRef = E64BEA502C018BC600A4B5C8 /* cv.tex */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E60D2F0E2C06ACDD0065F46E /* cv.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = cv.tex; path = ../../../Downloads/cv.tex; sourceTree = "<group>"; };
 		E64BEA312C0100E000A4B5C8 /* Resume Genie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Resume Genie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64BEA342C0100E000A4B5C8 /* Resume_GenieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resume_GenieApp.swift; sourceTree = "<group>"; };
 		E64BEA362C0100E000A4B5C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,7 +28,6 @@
 		E64BEA422C01093C00A4B5C8 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		E64BEA492C01253100A4B5C8 /* Resume Genie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Resume Genie.entitlements"; sourceTree = "<group>"; };
 		E64BEA4A2C015B5700A4B5C8 /* LatexToPDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatexToPDF.swift; sourceTree = "<group>"; };
-		E64BEA502C018BC600A4B5C8 /* cv.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = cv.tex; path = ../../../Downloads/cv.tex; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 		E64BEA332C0100E000A4B5C8 /* Resume Genie */ = {
 			isa = PBXGroup;
 			children = (
-				E64BEA502C018BC600A4B5C8 /* cv.tex */,
+				E60D2F0E2C06ACDD0065F46E /* cv.tex */,
 				E64BEA492C01253100A4B5C8 /* Resume Genie.entitlements */,
 				E64BEA342C0100E000A4B5C8 /* Resume_GenieApp.swift */,
 				E64BEA362C0100E000A4B5C8 /* ContentView.swift */,
@@ -147,7 +147,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E64BEA512C018BC600A4B5C8 /* cv.tex in Resources */,
+				E60D2F0F2C06ACDD0065F46E /* cv.tex in Resources */,
 				E64BEA3C2C0100E200A4B5C8 /* Preview Assets.xcassets in Resources */,
 				E64BEA392C0100E200A4B5C8 /* Assets.xcassets in Resources */,
 			);
